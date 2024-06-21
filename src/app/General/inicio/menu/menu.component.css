@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.header-left span {
+  font-size: 1.75rem; /* Incrementa el tamaño de la fuente */
+  font-weight: bold;
+  color: #333;
+}
+
+nav a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.25rem; /* Incrementa el tamaño de la fuente */
+}
+
+nav button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Incrementa el padding */
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.25rem; /* Incrementa el tamaño de la fuente */
+}
+
+nav button:hover {
+  background-color: darkblue;
+}
+
+main {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+main h1 {
+  font-size: 2.5rem; /* Incrementa el tamaño de la fuente */
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: 1.5rem; /* Incrementa el tamaño de la fuente */
+  margin-bottom: 2rem;
+}
+
+main select {
+  padding: 1rem; /* Incrementa el padding */
+  font-size: 1.25rem; /* Incrementa el tamaño de la fuente */
+  margin-bottom: 2rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.action-buttons button {
+  background-color: #1e3a8a; /* bg-blue-700 */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Incrementa el padding */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem; /* Incrementa el tamaño de la fuente */
+}
+
+.action-buttons button:hover {
+  background-color: darkblue;
+}

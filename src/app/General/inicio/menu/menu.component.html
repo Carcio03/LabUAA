@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Laboratorios</title>
+</head>
+<body>
+  <main>
+    <h1>Bienvenido</h1>
+    <p>Por favor, selecciona el campus al que quieres acceder</p>
+    <select>
+      <option>Selecciona el campus...</option>
+      <option>Campus Central</option>
+      <option>Campus Sur</option>
+      <option>Posta</option>
+      <option>BACHUAA Central</option>
+      <option>BACHUAA Oriente</option>
+      <option>Edificos Centrales</option>
+      <option>Artes</option>
+    </select>
+    <div class="action-buttons">
+      <button id="enter-campus">Entrar</button>
+    </div>
+  </main>
+  <script>
+    document.getElementById('enter-campus').addEventListener('click', function() {
+      const select = document.querySelector('select');
+      const selectedCampus = select.value;
+      if (selectedCampus !== 'Selecciona el campus...') {
+        alert(`Has seleccionado: ${selectedCampus}`);
+        // Aquí puedes agregar la lógica para redirigir o realizar alguna acción con el campus seleccionado
+      } else {
+        alert('Por favor selecciona un campus.');
+      }
+    });
+  </script>
+</body>
+</html>
